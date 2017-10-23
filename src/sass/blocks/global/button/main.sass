@@ -19,27 +19,31 @@ button
 
 .button
   display: inline-block
-  padding: 0 10px
-  font-size: rem(28)
-  font-family: $lato-regular
-  line-height: 60px
-  color: #ffffff
+  padding: 14px 27px
+  font-size: rem(24)
+  line-height: lh(26, 24)
+  font-family: $lato-bold
+  color: rgb(255, 255, 255)
+  text-transform: uppercase
   border: 1px solid transparent
   transition: color .3s ease, border-color .3s ease, background-color .3s ease
 
-.button-blue
-  background-color: rgb(5, 174, 204)
+  &.mod-orange
+    background-color: rgb(240, 157, 102)
 
-  &:hover
-    background-color: #ffffff
-    border-color: rgb(5, 174, 204)
-    color: rgb(5, 174, 204)
+    &:hover
+      background-color: darken(rgb(240, 157, 102), 5%)
 
-.button-register
-  width: 648px
+  &.mod-gallery
+    position: absolute
+    bottom: 166px
+    left: 50%
+    transform: translateX(-50%)
 
-.button-subsribe
-  width: 100%
-  font-size: rem(14)
-  text-transform: uppercase
-
+  &.mod-category
+    position: absolute
+    bottom: 66px
+    left: 50%
+    transform: translateX(-50%)
+    font-size: rem(15)
+    line-height: lh(17, 15)

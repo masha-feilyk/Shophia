@@ -1,26 +1,51 @@
-.content-title
+.content-block-title-holder
   position: relative
   display: block
-  margin-bottom: 29px
-  padding: 0 145px 0 28px
+  margin-bottom: 60px
+  text-align: center
 
   &:after
     content: ''
     position: absolute
-    bottom: 0
+    top: 50%
     left: 0
     width: 100%
     height: 1px
-    background: rgb(185, 185, 185)
+    background: #eaeaea
+    z-index: 1
 
-
-.content-title-text
+.content-block-title
   position: relative
   display: inline-block
-  padding: 13px 8px 4px 4px
+  width: 500px
+  padding: 0 130px
   font-size: rem(30)
-  font-family: $lato-regular
+  font-family: $playfair-italic-bold
+  font-style: italic
+  font-weight: bold
   line-height: lh(32, 30)
-  color: #00a1be
-  border-bottom: 1px solid #f0626e
+  color: #000
+  background: #ffffff
   z-index: 2
+  box-sizing: border-box
+
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50px
+    width: 20px
+    height: 20px
+    background: #d9bf8f
+    transform: translateY(-50%) rotate(45deg)
+
+
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    right: 50px
+    width: 20px
+    height: 20px
+    background: #d9bf8f
+    transform: translateY(-50%) rotate(45deg)

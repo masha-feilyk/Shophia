@@ -4,28 +4,36 @@ block content
   include blocks/navigation/navigation
 
   div.content-block
-    include blocks/category-grid
-
-
-  div.content-block
-
-    div.content-title
-      h2.content-title-text New Products
-
-    include blocks/preview/category-list
+    i.content-block-ico
+    include blocks/gallery/list
 
   div.content-block
-
-    div.content-title
-      h2.content-title-text Featured Products
-
-    include blocks/preview/product-list
+    div.fix
+      include blocks/about
 
   div.content-block
+    div.fix
+      div.content-block-title-holder
+        h2.content-block-title HandPicked
 
-    div.content-title
-      h2.content-title-text Who We Are
+      include blocks/category/category-list
 
-    include blocks/about
+  div.content-block
+    div.fix
+      div.content-block-title-holder
+        h2.content-block-title Summer Collection
 
-  div.content-sep
+      include blocks/preview/list
+
+  div.content-block
+    div.fix
+      div.content-block-title-holder
+        h2.content-block-title Our Brand
+
+      include blocks/gallery/brands
+
+
+  div.content-block-title-holder
+    h2.content-block-title Customers Says
+
+  include blocks/customers

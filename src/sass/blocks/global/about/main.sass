@@ -1,51 +1,97 @@
-.about-text-holder
-  display: block
-  padding: 0 30px 34px 28px
-
-.about-text
-  display: block
-  font-size: rem(16)
-  font-family: $lato-regular
-  line-height: lh(26, 16)
-  color: #464646
-
 .about-list
   display: block
-  margin: 0 -15px
+  margin: 0 -20px
   +clear
-  
-.about-item-box
+
+.about-item-holder
+  position: relative
   float: left
   width: calc(100% / 3)
-  padding: 0 15px 30px
+  padding: 0 20px
   box-sizing: border-box
+
+  &.mod-shipping
+
+    .about-item
+
+      &:after
+        content: ''
+        right: -40px
+        border-color: transparent transparent transparent #d9bf8f
+
+
+  &.mod-returns
+
+    .about-item
+      background: #000
+
+      &:after
+        content: ''
+        left: 0
+        border-color: transparent transparent transparent #fff
+
+      &:before
+        content: ''
+        right: 0
+        border-color: transparent #fff transparent transparent
+
+
+  &.mod-support
+
+    .about-item
+
+      &:before
+        content: ''
+        left: -40px
+        border-color: transparent #d9bf8f transparent transparent
+
 
 .about-item
   position: relative
-  display: flex
-  align-items: center
+  display: block
   width: 100%
-  height: 232px
-  padding: 40px 32px 40px 40px
+  padding: 20px 15px
+  background: #d9bf8f
   box-sizing: border-box
 
-  &.mod-choose
-    background: #434343
-    
-  &.mod-register
-    background: #05aecc
+  &:after
+    position: absolute
+    top: 0
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 50px 0 50px 40px
 
-  &.mod-checkout
-    background: #f0626e
-    
-.about-item-img
-  display: block
-  width: 144px
-  padding-right: 27px
+  &:before
+    position: absolute
+    top: 0
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 50px 40px 50px 0
 
-.about-item-text
+
+.about-ico
+  position: absolute
+  top: 50%
+  left: 10px
+  transform: translateY(-50%)
+
+.about-description
   display: block
-  width: calc(100% - 160px)
+  padding-left: 105px
+
+.about-description-title
+  display: block
+  margin-bottom: 10px
   font-size: rem(30)
+  line-height: lh(32, 30)
+  font-family: $lato-bold
+  color: #ffffff
+
+.about-description-text
+  display: block
+  font-size: rem(14)
+  line-height: lh(18, 14)
   font-family: $lato-regular
   color: #ffffff

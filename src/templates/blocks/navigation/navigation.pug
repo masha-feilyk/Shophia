@@ -4,7 +4,7 @@ include mixin/social
 div.fix
   div.navigation-holder
 
-    div.navigation-box
+    div.navigation-box.mod_menu
       div.navigation-menu
         +navigation([
           [{title: 'Home', mod: ''}],
@@ -13,11 +13,11 @@ div.fix
           [{title: 'Pages', mod: '#'}]
         ])
 
-    div.navigation-box
+    div.navigation-box.mod-logo
       div.navigation-logo-holder
         img.navigation-logo(src="../images/blocks/logo.png")
 
-    div.navigation-box
+    div.navigation-box.mod-actions
       div.navigation-social
         +navigation-social([
           [{mod: 'facebook'}],
