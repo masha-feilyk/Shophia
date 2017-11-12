@@ -19,7 +19,7 @@ button
 
 .button
   display: inline-block
-  padding: 14px 27px
+  padding: 13px 27px
   font-size: rem(24)
   line-height: lh(26, 24)
   font-family: $lato-bold
@@ -27,6 +27,7 @@ button
   text-transform: uppercase
   border: 1px solid transparent
   transition: color .3s ease, border-color .3s ease, background-color .3s ease
+  cursor: pointer
 
   &.mod-orange
     background-color: rgb(240, 157, 102)
@@ -36,14 +37,17 @@ button
 
   &.mod-gallery
     position: absolute
-    bottom: 166px
+    bottom: 168px
     left: 50%
     transform: translateX(-50%)
 
   &.mod-category
+    opacity: 0
+    visibility: hidden
     position: absolute
-    bottom: 66px
+    bottom: 16%
     left: 50%
     transform: translateX(-50%)
     font-size: rem(15)
     line-height: lh(17, 15)
+    transition: opacity .3s ease, visibility .3s ease, background-color .3s ease

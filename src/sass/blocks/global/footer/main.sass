@@ -1,13 +1,13 @@
 .footer-holder
   display: block
-  padding: 74px 0 30px
+  padding: 67px 0 30px
   background: #141414
 
 .footer
   position: relative
   display: flex
   width: 100%
-  padding-bottom: 90px
+  padding-bottom: 70px
 
 .footer-ico
   position: absolute
@@ -34,11 +34,15 @@
   display: block
   font-size: 0
 
+  &.mod-menu
+    width: calc(100% - 512px)
+
+
 .footer-box
   display: inline-block
   vertical-align: top
   width: auto
-  padding-right: 120px
+  padding-right: 126px
   box-sizing: border-box
 
 .footer-box-title
@@ -55,14 +59,20 @@
 
 .footer-item
   display: block
-  margin-bottom: 15px
+  margin-bottom: 14px
 
 .footer-link
-  display: block
+  display: inline-block
   font-size: rem(14)
   line-height: lh(16, 14)
   font-family: $lato-regular
   color: #737373
+  border-bottom: 1px solid transparent
+  transition: border-color .3s ease
+
+  &:hover
+    border-bottom-color: #737373
+
 
 .footer-info
   display: block
